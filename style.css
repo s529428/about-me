@@ -68,3 +68,6 @@ section img {
 .centerContent {
     text-align: center;
 }
+iframe {
+    padding: 20px;
+}
