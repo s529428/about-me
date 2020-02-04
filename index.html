@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Caroline Finnerty Default Page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <nav>
-            <img src="profilepic.jpg" alt="profile picture" id="profilepic">
+            <img src="profilepic.jpg" alt="profile picture" id="profile_pic">
             <ul>
                 <li><a href="index.html">Index</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -14,9 +14,10 @@
             </ul>
         </nav>
         <main>
-            <h1>Caroline Finnerty Module 2: P2 Styled Site</h1>
+            <h1 id="main_header">Caroline Finnerty Module 2: P2 Styled Site</h1>
             <hr>
             <article>
+                <h2 style="text-align: center;">This is the only Article</h2>
                 <section>
                     <h2>This is Section 1</h2>
                     <p>
@@ -30,8 +31,10 @@
                 <section>
                     <h2>This is Section 2</h2>
                     <table>
-                        <tr>This is a table row</tr>
-                        <td>This is a table data</td>
+                        <tr>
+                            <th>This is a table header</th>
+                            <td>This is a table data</td>
+                        </tr>
                     </table>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZpfaCiBtmOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>This video is provided by 'You Suck at Cooking'</div>
@@ -50,7 +53,7 @@
             </aside>
         </main>
         <footer>
-            <p>This site was coded by Caroline Finnerty :)</p>
+            <p class="footerText">This site was coded by Caroline Finnerty :)</p>
         </footer>
     </body>
 </html>
