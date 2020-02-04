@@ -1,0 +1,70 @@
+#profilepic{
+    border-radius: 50%;
+    max-width: 20%;
+    display: block;
+}
+nav{
+    width: 100%;
+    display: flex;
+}
+nav ul {
+    width: 80%;
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff946c;
+    flex-basis: 26%;
+}
+li a {
+    color: #9ebfb3;
+    text-decoration: none;
+    font-size: 24px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    flex-basis: 100%;
+}
+hr {
+    flex-basis: 100%;
+    margin: 5px;
+}
+article {
+    flex-basis: 75%;
+}
+aside {
+    flex-basis: 25%;
+}
+aside a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border: 3px #454372 solid;
+    border-radius: 8px;
+    margin: 5px;
+    text-decoration: none;
+    color: #454372;
+}
+aside a:hover {
+    background-color: #2f2963;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: column;
+}
+section img {
+    width: 50%;
+}
+.centerContent {
+    text-align: center;
+}
