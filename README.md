@@ -31,3 +31,6 @@ These are all good resources for answering any questions one may have during web
 
 Caroline Finnerty, Bachlors of Science - Computer Science. 
 ![Upset Pikachu](IMG_7576.JPG)
+
+## External Resources
+- Guacamole - You Suck at Cooking episode provided by You Suck at Cooking
