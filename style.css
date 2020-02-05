@@ -167,4 +167,7 @@ th, td {
     .contentArea {
         flex-direction: column-reverse;
     }
+    form {
+        flex-basis: 100%;
+    }
 }
