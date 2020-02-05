@@ -2,6 +2,7 @@
     border-radius: 50%;
     max-width: 20%;
     display: block;
+    flex-basis: 20%;
 }
 #main_header {
     font-family: arial;
@@ -13,8 +14,8 @@ nav{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav ul {
-    width: 80%;
+nav .navLinks {
+    flex-basis: 80%;
     display: inline-flex;
     list-style: none;
     justify-content: space-evenly;
@@ -48,6 +49,11 @@ hr {
     border-style: solid;
     color: #2f2963;
     margin-bottom: 20px;
+}
+.contentArea {
+    flex-basis: 100%;
+    display: flex;
+    margin: 30px 10px;
 }
 article {
     flex-basis: 75%;
@@ -135,4 +141,30 @@ table, th, td {
 }
 th, td {
     padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #profile_pic {
+        flex-basis: 100%;
+    }
+    .navLinks {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    .navLinks li {
+        flex-basis: 100%;
+    }
+    aside {
+        flex-basis: 100%;
+    }
+    article {
+        flex-basis: 100%;
+    }
+    .contentArea {
+        flex-direction: column-reverse;
+    }
 }
