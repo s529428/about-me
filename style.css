@@ -126,3 +126,13 @@ form input[type="submit"] {
     text-align: center;
     flex-basis: 100%;
 }
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #2f2963;
+}
+th, td {
+    padding: 10px;
+}
