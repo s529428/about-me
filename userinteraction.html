@@ -3,6 +3,8 @@
     <head>
         <title>Caroline Finnerty User Interaction Page</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <nav>
@@ -18,13 +20,13 @@
             <hr>
             <h2 style="text-align: center; flex-basis: 100%;">Calculate Tip and Total!</h2>
             <form>
-                <label>Whats the bill?: </label><input type="text" name="billAmount">
-                <label>How much do you want to tip?: </label><input type="text" name="tipAmount">
-                <label>Tip: </label><label id="tip_amount">$0</label>
-                <label>Tax: </label><label id="tax_amount">$0</label>
-                <label>Total: </label><label id="total_amount">$0</label>
-                <input type="submit" value="Calculate!">
+                <label>What do you want to purchase?:</label><input type="text" name="itemName">
+                <label>How much was the item?: </label><input type="number" name="itemAmount">
+                <label>Items in Basket</label><label id="basket"></label>
+                <label>Tax: </label><label id="tax_amount">0</label>
+                <label>Total: </label><label id="total_amount">0</label>
             </form>
+            <button id="submitButton">CALCULATE!</button>
         </main>
         <footer>
                 <p class="footerText">This site was coded by Caroline Finnerty :)</p>

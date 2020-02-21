@@ -99,6 +99,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .footerText {
     padding: 20px;
@@ -122,7 +123,7 @@ form label, input[type="text"], input[type="email"], textarea  {
 form label {
     text-align: right;
 }
-form input[type="submit"] {
+button {
     padding: 16px 75px;
     border: none;
     background-color: #2f2963;
@@ -130,6 +131,7 @@ form input[type="submit"] {
     color: white;
     text-transform: uppercase;
     margin-left: 45%;
+    display: flex;
 }
 #contact_heading {
     text-align: center;
