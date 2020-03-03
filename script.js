@@ -8,14 +8,16 @@ $(document).ready(function(){
     //Calculation Function
     $("#submitButton").click(function(){
         //Add to the basket
-        localStorage.setItem("groceryList", (localStorage.getItem("groceryList") + $("input[name='itemName']").val() + ", "));
-        $("#basket").text(localStorage.getItem("groceryList"));
-        //Add to the total
-        localStorage.setItem("totalAmount", (Number(localStorage.getItem("totalAmount")) + Number($("input[name='itemAmount']").val())));
-        $("#total_amount").text("$" + localStorage.getItem("totalAmount"));
-        //Add the tax amount
-        localStorage.setItem("taxAmount", (Number(localStorage.getItem("totalAmount")) * 0.25));
-        $("#tax_amount").text("$" + localStorage.getItem("taxAmount"));
+        if($("input[name='itemName']").val() != "" && $("input[name='itemAmount']").val() != ""){
+            localStorage.setItem("groceryList", (localStorage.getItem("groceryList") + $("input[name='itemName']").val() + ", "));
+            $("#basket").text(localStorage.getItem("groceryList"));
+            //Add to the total
+            localStorage.setItem("totalAmount", (Number(localStorage.getItem("totalAmount")) + Number($("input[name='itemAmount']").val())));
+            $("#total_amount").text("$" + localStorage.getItem("totalAmount"));
+            //Add the tax amount
+            localStorage.setItem("taxAmount", (Number(localStorage.getItem("totalAmount")) * 0.25));
+            $("#tax_amount").text("$" + localStorage.getItem("taxAmount"));
+        }
     });
 
     $("#clearButton").click(function(){
