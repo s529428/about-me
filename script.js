@@ -7,8 +7,8 @@ $(document).ready(function(){
     $("#tax_amount").text(localStorage.getItem("taxAmount"));
     //Calculation Function
     $("#submitButton").click(function(){
-        //Add to the basket
         if($("input[name='itemName']").val() != "" && $("input[name='itemAmount']").val() != ""){
+            //Add to the basket
             localStorage.setItem("groceryList", (localStorage.getItem("groceryList") + $("input[name='itemName']").val() + ", "));
             $("#basket").text(localStorage.getItem("groceryList"));
             //Add to the total
