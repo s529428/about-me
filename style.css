@@ -40,6 +40,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
 }
 h1 {
     flex-basis: 100%;
@@ -112,7 +113,6 @@ form {
     flex-wrap: wrap;
     padding: 20px;
     flex-basis: 80%;
-    justify-content: center;
 }
 form label, input[type="text"], input[type="email"], textarea  {
     flex-basis: 45%;
@@ -123,6 +123,15 @@ form label, input[type="text"], input[type="email"], textarea  {
 form label {
     text-align: right;
 }
+.uLabel {
+    text-align: right;
+    flex-basis: 35%;
+}
+.uInput {
+    flex-basis: 45%;
+    margin: 5px;
+    padding: 10px;
+}
 button {
     padding: 16px 75px;
     border: none;
@@ -130,18 +139,18 @@ button {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    margin-left: 45%;
-    display: flex;
+    flex-basis: 100%;
 }
 #buttonGroup {
     display: flex;
     flex-wrap: wrap;
-    /*flex-basis: 80%;*/
+    flex-basis: 25%;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #submitButton, #clearButton {
-    margin-bottom: 15px;
+    margin: 15px;
 }
 #contact_heading {
     text-align: center;
@@ -156,6 +165,29 @@ table, th, td {
 }
 th, td {
     padding: 10px;
+}
+.ajaxBit {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ajaxBit h2 {
+    flex-basis: 100%;
+}
+.ajaxBit #result {
+    font-family: 'Courier New', Courier, monospace;
+    flex-basis: 100%;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.ajaxBit button {
+    margin-top: 20px;
+    flex-basis: 20%;
 }
 
 @media only screen and (max-width: 768px) {

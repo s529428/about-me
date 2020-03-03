@@ -20,15 +20,20 @@
             <hr>
             <h2 style="text-align: center; flex-basis: 100%;">Calculate Tip and Total!</h2>
             <form>
-                <label>What do you want to purchase?:</label><input type="text" name="itemName">
-                <label>How much was the item?: </label><input type="number" name="itemAmount">
-                <label>Items in Basket</label><label id="basket"></label>
-                <label>Tax: </label><label id="tax_amount">0</label>
-                <label>Total: </label><label id="total_amount">0</label>
+                <label class="uLabel">What do you want to purchase?:</label><input type="text" name="itemName" class="uInput">
+                <label class="uLabel">How much was the item?: </label><input type="number" name="itemAmount" class="uInput">
+                <label class="uLabel">Items in Basket</label><label id="basket"></label>
+                <label class="uLabel">Tax: </label><label id="tax_amount">0</label>
+                <label class="uLabel"> Total: </label><label id="total_amount">0</label>
             </form>
             <div id="buttonGroup">
                 <button id="submitButton">CALCULATE!</button>
-            <button id="clearButton">CLEAR!</button>
+                <button id="clearButton">CLEAR!</button>
+            </div>
+            <div class="ajaxBit">
+                <h2>The AJAX Bit</h2>
+                <span id="result"></span>
+                <button type="button" onclick="loadAjaxRec()">Call the AJAX!</button>
             </div>
         </main>
         <footer>
