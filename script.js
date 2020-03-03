@@ -17,6 +17,8 @@ $(document).ready(function(){
             //Add the tax amount
             localStorage.setItem("taxAmount", (Number(localStorage.getItem("totalAmount")) * 0.25));
             $("#tax_amount").text("$" + localStorage.getItem("taxAmount"));
+        }else {
+            window.alert("You gotta enter a value in BOTH boxes silly!");
         }
     });
 
